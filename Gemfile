@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-gem 'rails'
+gem 'rails', '~> 5.0.2'
 gem 'sqlite3'
 gem 'sass-rails'
 gem 'uglifier'
@@ -15,7 +15,6 @@ gem 'bootstrap-sass'
 gem 'simple_form'
 group :development do
   gem 'better_errors'
-  gem 'quiet_assets'
   gem 'rails_layout'
 end
 gem 'faker'

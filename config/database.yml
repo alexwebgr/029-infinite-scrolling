@@ -18,9 +18,9 @@ test:
 
 production:
   adapter: postgresql
-  database: infinite_scrolling_production
-  host: localhost
-  username: postgres
-  password: password
+  database: <%= ENV['database'] %>
+  host: <%= ENV['host'] %>
+  username: <%= ENV['username'] %>
+  password: <%= ENV['password'] %>
   pool: 5
   timeout: 5000

@@ -1,0 +1,26 @@
+development:
+  adapter: postgresql
+  database: infinite_scrolling_development
+  host: localhost
+  username: postgres
+  password: password
+  pool: 5
+  timeout: 5000
+
+test:
+  adapter: postgresql
+  database: infinite_scrolling_test
+  host: localhost
+  username: postgres
+  password: password
+  pool: 5
+  timeout: 5000
+
+production:
+  adapter: postgresql
+  database: <%= ENV['database'] %>
+  host: <%= ENV['host'] %>
+  username: <%= ENV['username'] %>
+  password: <%= ENV['password'] %>
+  pool: 5
+  timeout: 5000
